@@ -1,0 +1,2933 @@
+{
+  "schema_version": 1,
+  "provenance": "User-provided nursing-friend list; compact transcription",
+  "source_sha256": "83026908a7b5098c0d38d9ec8b80481da752c0f6ba541aa35e00ed0711d8edf1",
+  "purpose": "Draft reference only; not diagnostic training or prescribing rules",
+  "conditions": [
+    "Malaria",
+    "Typhoid fever",
+    "Pneumonia",
+    "Hypertension",
+    "Type 2 diabetes mellitus",
+    "Peptic ulcer disease",
+    "Urinary tract infection",
+    "Asthma",
+    "Tuberculosis",
+    "Pain and fever",
+    "Iron-deficiency anaemia",
+    "Sickle cell disease",
+    "Fungal infections",
+    "Scabies",
+    "Acne",
+    "Vaginal candidiasis",
+    "Bacterial vaginosis",
+    "Gonorrhoea",
+    "Chlamydia",
+    "Gout",
+    "Epilepsy",
+    "Heart failure",
+    "High cholesterol",
+    "Migraine",
+    "Depression",
+    "Anxiety disorders",
+    "Schizophrenia",
+    "Hypothyroidism",
+    "Hyperthyroidism",
+    "Gastroesophageal reflux disease"
+  ],
+  "medicines": [
+    {
+      "id": "1df52db99376557a",
+      "ingredients": [
+        "Artemether",
+        "Lumefantrine"
+      ],
+      "supplied_names": [
+        "Artemether and Lumefantrine",
+        "Coartem",
+        "Lonart",
+        "Amatem"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "767e35338259d3b5",
+      "ingredients": [
+        "Dihydroartemisinin",
+        "Piperaquine"
+      ],
+      "supplied_names": [
+        "Dihydroartemisinin and Piperaquine",
+        "P-Alaxin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "b7545db307056ce7",
+      "ingredients": [
+        "Artesunate"
+      ],
+      "supplied_names": [
+        "Artesunate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "0e0a726427aacbc4",
+      "ingredients": [
+        "Sulfadoxine",
+        "Pyrimethamine"
+      ],
+      "supplied_names": [
+        "Fansidar"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "4acf49b404179416",
+      "ingredients": [
+        "Ceftriaxone"
+      ],
+      "supplied_names": [
+        "Ceftriaxone",
+        "Rocephin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "649cef64d969c53e",
+      "ingredients": [
+        "Azithromycin"
+      ],
+      "supplied_names": [
+        "Azithromycin",
+        "Zithromax"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "1b4ac6feb0601661",
+      "ingredients": [
+        "Cefixime"
+      ],
+      "supplied_names": [
+        "Cefixime",
+        "Suprax"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6036cad3024777ed",
+      "ingredients": [
+        "Ciprofloxacin"
+      ],
+      "supplied_names": [
+        "Ciprofloxacin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6bf39e02999bcec2",
+      "ingredients": [
+        "Amoxicillin"
+      ],
+      "supplied_names": [
+        "Amoxicillin",
+        "Amoxil"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "e1dac9be6c902a6b",
+      "ingredients": [
+        "Amoxicillin",
+        "Clavulanic Acid"
+      ],
+      "supplied_names": [
+        "Amoxicillin and Clavulanic Acid",
+        "Augmentin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "fdd3e3ccc9517e97",
+      "ingredients": [
+        "Doxycycline"
+      ],
+      "supplied_names": [
+        "Doxycycline",
+        "Vibramycin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "aba1054d29473b20",
+      "ingredients": [
+        "Amlodipine"
+      ],
+      "supplied_names": [
+        "Amlodipine",
+        "Norvasc"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "cc990d839e8da363",
+      "ingredients": [
+        "Nifedipine"
+      ],
+      "supplied_names": [
+        "Nifedipine",
+        "Adalat"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "e5eac43e2df2946f",
+      "ingredients": [
+        "Losartan"
+      ],
+      "supplied_names": [
+        "Losartan",
+        "Cozaar"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "78c50fa41383eee7",
+      "ingredients": [
+        "Lisinopril"
+      ],
+      "supplied_names": [
+        "Lisinopril",
+        "Zestril"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "bde6a813b6cab1a7",
+      "ingredients": [
+        "Enalapril"
+      ],
+      "supplied_names": [
+        "Enalapril",
+        "Renitec"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "c587ceab445a4ceb",
+      "ingredients": [
+        "Hydrochlorothiazide"
+      ],
+      "supplied_names": [
+        "Hydrochlorothiazide"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "669592addb2ff5f0",
+      "ingredients": [
+        "Atenolol"
+      ],
+      "supplied_names": [
+        "Atenolol",
+        "Tenormin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "c18f8cceb7aa87da",
+      "ingredients": [
+        "Metformin"
+      ],
+      "supplied_names": [
+        "Metformin",
+        "Glucophage"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "76ac041cc910a9f1",
+      "ingredients": [
+        "Glimepiride"
+      ],
+      "supplied_names": [
+        "Glimepiride",
+        "Amaryl"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6c58758bc547e045",
+      "ingredients": [
+        "Gliclazide"
+      ],
+      "supplied_names": [
+        "Gliclazide",
+        "Diamicron"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a98ee9b705711e41",
+      "ingredients": [
+        "Empagliflozin"
+      ],
+      "supplied_names": [
+        "Empagliflozin",
+        "Jardiance"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "caecc5e44b044ead",
+      "ingredients": [
+        "Dapagliflozin"
+      ],
+      "supplied_names": [
+        "Dapagliflozin",
+        "Forxiga"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "8c1ec4fa9e80839b",
+      "ingredients": [
+        "Sitagliptin"
+      ],
+      "supplied_names": [
+        "Sitagliptin",
+        "Januvia"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "ca10c1396d07fa15",
+      "ingredients": [
+        "Insulin Glargine"
+      ],
+      "supplied_names": [
+        "Insulin Glargine",
+        "Lantus"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "8cfafcd363f31197",
+      "ingredients": [
+        "Insulin Aspart"
+      ],
+      "supplied_names": [
+        "Insulin Aspart",
+        "NovoRapid"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "798c6fe77221b475",
+      "ingredients": [
+        "Omeprazole"
+      ],
+      "supplied_names": [
+        "Omeprazole",
+        "Losec"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "0eb962e9fb96e6b4",
+      "ingredients": [
+        "Esomeprazole"
+      ],
+      "supplied_names": [
+        "Esomeprazole",
+        "Nexium"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "765a9e3f32cbe635",
+      "ingredients": [
+        "Pantoprazole"
+      ],
+      "supplied_names": [
+        "Pantoprazole"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "9712d583cf817925",
+      "ingredients": [
+        "Clarithromycin"
+      ],
+      "supplied_names": [
+        "Clarithromycin",
+        "Klacid"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "524a0b304071894b",
+      "ingredients": [
+        "Metronidazole"
+      ],
+      "supplied_names": [
+        "Metronidazole",
+        "Flagyl"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "1e14d0600bda38c8",
+      "ingredients": [
+        "Bismuth Subsalicylate"
+      ],
+      "supplied_names": [
+        "Bismuth Subsalicylate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "20f1fc5758bc16c0",
+      "ingredients": [
+        "Nitrofurantoin"
+      ],
+      "supplied_names": [
+        "Nitrofurantoin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "8eb60395796c8a7a",
+      "ingredients": [
+        "Fosfomycin"
+      ],
+      "supplied_names": [
+        "Fosfomycin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "97c0eeec380b35be",
+      "ingredients": [
+        "Cefuroxime"
+      ],
+      "supplied_names": [
+        "Cefuroxime",
+        "Zinnat"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "bd107be8959ffdd6",
+      "ingredients": [
+        "Salbutamol"
+      ],
+      "supplied_names": [
+        "Salbutamol",
+        "Ventolin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "45b2559f4e1fd4d7",
+      "ingredients": [
+        "Budesonide"
+      ],
+      "supplied_names": [
+        "Budesonide",
+        "Pulmicort"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "30602229840a49d6",
+      "ingredients": [
+        "Budesonide",
+        "Formoterol"
+      ],
+      "supplied_names": [
+        "Budesonide and Formoterol",
+        "Symbicort"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "d975ac21828249bf",
+      "ingredients": [
+        "Fluticasone",
+        "Salmeterol"
+      ],
+      "supplied_names": [
+        "Fluticasone and Salmeterol",
+        "Seretide"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a44297f85f484d01",
+      "ingredients": [
+        "Montelukast"
+      ],
+      "supplied_names": [
+        "Montelukast",
+        "Singulair"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "04ea3a726eb76882",
+      "ingredients": [
+        "Ipratropium Bromide"
+      ],
+      "supplied_names": [
+        "Ipratropium Bromide"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "9183c3a577a4bb52",
+      "ingredients": [
+        "Rifampicin"
+      ],
+      "supplied_names": [
+        "Rifampicin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "0302fe55cfd6d4c5",
+      "ingredients": [
+        "Isoniazid"
+      ],
+      "supplied_names": [
+        "Isoniazid"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "d416cd34aeba5da5",
+      "ingredients": [
+        "Pyrazinamide"
+      ],
+      "supplied_names": [
+        "Pyrazinamide"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "21264587fffc98e8",
+      "ingredients": [
+        "Ethambutol"
+      ],
+      "supplied_names": [
+        "Ethambutol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "ae804acd896ac2c7",
+      "ingredients": [
+        "Rifampicin",
+        "Isoniazid"
+      ],
+      "supplied_names": [
+        "Rifampicin and Isoniazid",
+        "Rifinah"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "cc4d1f4a3c8a8e13",
+      "ingredients": [
+        "Rifampicin",
+        "Isoniazid",
+        "Pyrazinamide",
+        "Ethambutol"
+      ],
+      "supplied_names": [
+        "Rifampicin, Isoniazid, Pyrazinamide and Ethambutol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "54238e9415df5dff",
+      "ingredients": [
+        "Paracetamol"
+      ],
+      "supplied_names": [
+        "Paracetamol",
+        "Panadol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a7f187a6f4f060d5",
+      "ingredients": [
+        "Ibuprofen"
+      ],
+      "supplied_names": [
+        "Ibuprofen",
+        "Brufen"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a582495b597ecfc7",
+      "ingredients": [
+        "Diclofenac"
+      ],
+      "supplied_names": [
+        "Diclofenac",
+        "Voltaren"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6ae334b44a9283a6",
+      "ingredients": [
+        "Diclofenac Potassium"
+      ],
+      "supplied_names": [
+        "Diclofenac Potassium",
+        "Cataflam"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a9ee7a13cb1d8b30",
+      "ingredients": [
+        "Naproxen"
+      ],
+      "supplied_names": [
+        "Naproxen",
+        "Naprosyn"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a6cb06a77ec04139",
+      "ingredients": [
+        "Mefenamic Acid"
+      ],
+      "supplied_names": [
+        "Mefenamic Acid",
+        "Ponstan"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "9ed63154d1e2d328",
+      "ingredients": [
+        "Ferrous Sulfate"
+      ],
+      "supplied_names": [
+        "Ferrous Sulfate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "afe95dc7914b8b94",
+      "ingredients": [
+        "Ferrous Fumarate"
+      ],
+      "supplied_names": [
+        "Ferrous Fumarate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "5ff0ba0e1278ddd7",
+      "ingredients": [
+        "Ferrous Gluconate"
+      ],
+      "supplied_names": [
+        "Ferrous Gluconate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a8a8e33a9cdc8cc0",
+      "ingredients": [
+        "Iron Polymaltose"
+      ],
+      "supplied_names": [
+        "Iron Polymaltose",
+        "Maltofer"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "501412629a52e590",
+      "ingredients": [
+        "Folic Acid"
+      ],
+      "supplied_names": [
+        "Folic Acid"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "04a522addd4fbead",
+      "ingredients": [
+        "Hydroxyurea"
+      ],
+      "supplied_names": [
+        "Hydroxyurea",
+        "Hydrea"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "790d1daed45b00c9",
+      "ingredients": [
+        "Phenoxymethylpenicillin"
+      ],
+      "supplied_names": [
+        "Phenoxymethylpenicillin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "88b1b528944b7370",
+      "ingredients": [
+        "Fluconazole"
+      ],
+      "supplied_names": [
+        "Fluconazole",
+        "Diflucan"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "f53035420640904a",
+      "ingredients": [
+        "Clotrimazole"
+      ],
+      "supplied_names": [
+        "Clotrimazole",
+        "Canesten"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "402c8b276fcc78c2",
+      "ingredients": [
+        "Miconazole"
+      ],
+      "supplied_names": [
+        "Miconazole",
+        "Gyno-Daktarin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "7df0ca48f4c6f901",
+      "ingredients": [
+        "Nystatin"
+      ],
+      "supplied_names": [
+        "Nystatin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "32e17573eaf3a007",
+      "ingredients": [
+        "Terbinafine"
+      ],
+      "supplied_names": [
+        "Terbinafine",
+        "Lamisil"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "25098b221a1529aa",
+      "ingredients": [
+        "Itraconazole"
+      ],
+      "supplied_names": [
+        "Itraconazole"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "b46825e3b1851a2c",
+      "ingredients": [
+        "Permethrin"
+      ],
+      "supplied_names": [
+        "Permethrin",
+        "Lyclear"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "fca0801fbd2e3cda",
+      "ingredients": [
+        "Ivermectin"
+      ],
+      "supplied_names": [
+        "Ivermectin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "3277953783faf69c",
+      "ingredients": [
+        "Benzyl Benzoate"
+      ],
+      "supplied_names": [
+        "Benzyl Benzoate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "23c9808c4d4c4c06",
+      "ingredients": [
+        "Benzoyl Peroxide"
+      ],
+      "supplied_names": [
+        "Benzoyl Peroxide"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "80958304b67ddd7d",
+      "ingredients": [
+        "Adapalene"
+      ],
+      "supplied_names": [
+        "Adapalene",
+        "Differin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a9a86807c98a5e52",
+      "ingredients": [
+        "Tretinoin"
+      ],
+      "supplied_names": [
+        "Tretinoin",
+        "Retin-A"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "c8654dfa1e6a3a78",
+      "ingredients": [
+        "Clindamycin"
+      ],
+      "supplied_names": [
+        "Clindamycin",
+        "Dalacin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "e67829c3acde78ae",
+      "ingredients": [
+        "Isotretinoin"
+      ],
+      "supplied_names": [
+        "Isotretinoin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a64cf55fb4c002d6",
+      "ingredients": [
+        "Allopurinol"
+      ],
+      "supplied_names": [
+        "Allopurinol",
+        "Zyloric"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "f7cef0b66d576da5",
+      "ingredients": [
+        "Colchicine"
+      ],
+      "supplied_names": [
+        "Colchicine",
+        "Colcrys"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "308165d2b3efc893",
+      "ingredients": [
+        "Febuxostat"
+      ],
+      "supplied_names": [
+        "Febuxostat"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "7338725ff84f4922",
+      "ingredients": [
+        "Carbamazepine"
+      ],
+      "supplied_names": [
+        "Carbamazepine",
+        "Tegretol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "ad466db77f949fa1",
+      "ingredients": [
+        "Sodium Valproate"
+      ],
+      "supplied_names": [
+        "Sodium Valproate",
+        "Epilim"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "3a69c63f450411d3",
+      "ingredients": [
+        "Levetiracetam"
+      ],
+      "supplied_names": [
+        "Levetiracetam",
+        "Keppra"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "f3a25f61795bddd9",
+      "ingredients": [
+        "Lamotrigine"
+      ],
+      "supplied_names": [
+        "Lamotrigine",
+        "Lamictal"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "4fc202048e65a533",
+      "ingredients": [
+        "Phenytoin"
+      ],
+      "supplied_names": [
+        "Phenytoin",
+        "Dilantin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "960753084683b29b",
+      "ingredients": [
+        "Phenobarbital"
+      ],
+      "supplied_names": [
+        "Phenobarbital"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "7ae669b86fba6d9a",
+      "ingredients": [
+        "Furosemide"
+      ],
+      "supplied_names": [
+        "Furosemide",
+        "Lasix"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "580d66f414c7c9a7",
+      "ingredients": [
+        "Spironolactone"
+      ],
+      "supplied_names": [
+        "Spironolactone",
+        "Aldactone"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a3a5a34d4db3d6fd",
+      "ingredients": [
+        "Carvedilol"
+      ],
+      "supplied_names": [
+        "Carvedilol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "55a785c953c14824",
+      "ingredients": [
+        "Sacubitril",
+        "Valsartan"
+      ],
+      "supplied_names": [
+        "Sacubitril and Valsartan",
+        "Entresto"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "920edde59b13e5a5",
+      "ingredients": [
+        "Atorvastatin"
+      ],
+      "supplied_names": [
+        "Atorvastatin",
+        "Lipitor"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "fcc68692865e6b40",
+      "ingredients": [
+        "Rosuvastatin"
+      ],
+      "supplied_names": [
+        "Rosuvastatin",
+        "Crestor"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "12402be81f2c14a7",
+      "ingredients": [
+        "Simvastatin"
+      ],
+      "supplied_names": [
+        "Simvastatin",
+        "Zocor"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6d5ea8ff7347167d",
+      "ingredients": [
+        "Ezetimibe"
+      ],
+      "supplied_names": [
+        "Ezetimibe"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "4e765f8f1eff90c0",
+      "ingredients": [
+        "Fenofibrate"
+      ],
+      "supplied_names": [
+        "Fenofibrate"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "9b4055f14bf8e688",
+      "ingredients": [
+        "Sumatriptan"
+      ],
+      "supplied_names": [
+        "Sumatriptan",
+        "Imigran"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "60a983131cb1b1b4",
+      "ingredients": [
+        "Rizatriptan"
+      ],
+      "supplied_names": [
+        "Rizatriptan",
+        "Maxalt"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "99b797b65414a228",
+      "ingredients": [
+        "Topiramate"
+      ],
+      "supplied_names": [
+        "Topiramate",
+        "Topamax"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "f801c521a6037534",
+      "ingredients": [
+        "Propranolol"
+      ],
+      "supplied_names": [
+        "Propranolol",
+        "Inderal"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a79616120b7d856f",
+      "ingredients": [
+        "Amitriptyline"
+      ],
+      "supplied_names": [
+        "Amitriptyline"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "6979e68b93072f44",
+      "ingredients": [
+        "Fluoxetine"
+      ],
+      "supplied_names": [
+        "Fluoxetine",
+        "Prozac"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a9b73a1e37ce8085",
+      "ingredients": [
+        "Sertraline"
+      ],
+      "supplied_names": [
+        "Sertraline",
+        "Zoloft"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "dc4d899da1918e42",
+      "ingredients": [
+        "Escitalopram"
+      ],
+      "supplied_names": [
+        "Escitalopram",
+        "Cipralex"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "24832b84b1621114",
+      "ingredients": [
+        "Venlafaxine"
+      ],
+      "supplied_names": [
+        "Venlafaxine"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "b3e0f6359133644a",
+      "ingredients": [
+        "Diazepam"
+      ],
+      "supplied_names": [
+        "Diazepam",
+        "Valium"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "5768e368e11a82c8",
+      "ingredients": [
+        "Lorazepam"
+      ],
+      "supplied_names": [
+        "Lorazepam",
+        "Ativan"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "4157d2081fc6a407",
+      "ingredients": [
+        "Alprazolam"
+      ],
+      "supplied_names": [
+        "Alprazolam",
+        "Xanax"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "b3cdc8eec95f0112",
+      "ingredients": [
+        "Buspirone"
+      ],
+      "supplied_names": [
+        "Buspirone",
+        "Buspar"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "fcf9a0f0f1a11ef6",
+      "ingredients": [
+        "Risperidone"
+      ],
+      "supplied_names": [
+        "Risperidone",
+        "Risperdal"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "1468a294ab0dcd6b",
+      "ingredients": [
+        "Olanzapine"
+      ],
+      "supplied_names": [
+        "Olanzapine",
+        "Zyprexa"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "4b2e5d23df620610",
+      "ingredients": [
+        "Haloperidol"
+      ],
+      "supplied_names": [
+        "Haloperidol",
+        "Haldol"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "8398e180a8f1f838",
+      "ingredients": [
+        "Quetiapine"
+      ],
+      "supplied_names": [
+        "Quetiapine",
+        "Seroquel"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "a670530567194409",
+      "ingredients": [
+        "Clozapine"
+      ],
+      "supplied_names": [
+        "Clozapine",
+        "Clozaril"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "d72304c0df8f5bd1",
+      "ingredients": [
+        "Levothyroxine"
+      ],
+      "supplied_names": [
+        "Levothyroxine",
+        "Synthroid",
+        "Eltroxin"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "3aaebd3bc7c62266",
+      "ingredients": [
+        "Carbimazole"
+      ],
+      "supplied_names": [
+        "Carbimazole",
+        "Neo-Mercazole"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "34a99d4271042852",
+      "ingredients": [
+        "Methimazole"
+      ],
+      "supplied_names": [
+        "Methimazole"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "11eb5d31124c7029",
+      "ingredients": [
+        "Propylthiouracil"
+      ],
+      "supplied_names": [
+        "Propylthiouracil"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    },
+    {
+      "id": "b4c8f1004b33a037",
+      "ingredients": [
+        "Sodium Alginate",
+        "Sodium Bicarbonate",
+        "Calcium Carbonate"
+      ],
+      "supplied_names": [
+        "Gaviscon"
+      ],
+      "review_status": "unverified",
+      "sources": []
+    }
+  ],
+  "associations": [
+    {
+      "condition": "Malaria",
+      "medicine_id": "1df52db99376557a",
+      "source_line": 5,
+      "supplied_names": [
+        "Artemether and Lumefantrine",
+        "Coartem",
+        "Lonart",
+        "Amatem"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Malaria",
+      "medicine_id": "767e35338259d3b5",
+      "source_line": 6,
+      "supplied_names": [
+        "Dihydroartemisinin and Piperaquine",
+        "P-Alaxin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Malaria",
+      "medicine_id": "b7545db307056ce7",
+      "source_line": 7,
+      "supplied_names": [
+        "Artesunate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Malaria",
+      "medicine_id": "0e0a726427aacbc4",
+      "source_line": 8,
+      "supplied_names": [
+        "Fansidar"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Typhoid fever",
+      "medicine_id": "4acf49b404179416",
+      "source_line": 10,
+      "supplied_names": [
+        "Ceftriaxone",
+        "Rocephin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Typhoid fever",
+      "medicine_id": "649cef64d969c53e",
+      "source_line": 11,
+      "supplied_names": [
+        "Azithromycin",
+        "Zithromax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Typhoid fever",
+      "medicine_id": "1b4ac6feb0601661",
+      "source_line": 12,
+      "supplied_names": [
+        "Cefixime",
+        "Suprax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Typhoid fever",
+      "medicine_id": "6036cad3024777ed",
+      "source_line": 13,
+      "supplied_names": [
+        "Ciprofloxacin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pneumonia",
+      "medicine_id": "4acf49b404179416",
+      "source_line": 15,
+      "supplied_names": [
+        "Ceftriaxone",
+        "Rocephin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pneumonia",
+      "medicine_id": "6bf39e02999bcec2",
+      "source_line": 16,
+      "supplied_names": [
+        "Amoxicillin",
+        "Amoxil"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pneumonia",
+      "medicine_id": "e1dac9be6c902a6b",
+      "source_line": 17,
+      "supplied_names": [
+        "Amoxicillin and Clavulanic Acid",
+        "Augmentin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pneumonia",
+      "medicine_id": "649cef64d969c53e",
+      "source_line": 18,
+      "supplied_names": [
+        "Azithromycin",
+        "Zithromax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pneumonia",
+      "medicine_id": "fdd3e3ccc9517e97",
+      "source_line": 19,
+      "supplied_names": [
+        "Doxycycline",
+        "Vibramycin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "aba1054d29473b20",
+      "source_line": 21,
+      "supplied_names": [
+        "Amlodipine",
+        "Norvasc"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "cc990d839e8da363",
+      "source_line": 22,
+      "supplied_names": [
+        "Nifedipine",
+        "Adalat"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "e5eac43e2df2946f",
+      "source_line": 23,
+      "supplied_names": [
+        "Losartan",
+        "Cozaar"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "78c50fa41383eee7",
+      "source_line": 24,
+      "supplied_names": [
+        "Lisinopril",
+        "Zestril"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "bde6a813b6cab1a7",
+      "source_line": 25,
+      "supplied_names": [
+        "Enalapril",
+        "Renitec"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "c587ceab445a4ceb",
+      "source_line": 26,
+      "supplied_names": [
+        "Hydrochlorothiazide"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypertension",
+      "medicine_id": "669592addb2ff5f0",
+      "source_line": 27,
+      "supplied_names": [
+        "Atenolol",
+        "Tenormin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "c18f8cceb7aa87da",
+      "source_line": 29,
+      "supplied_names": [
+        "Metformin",
+        "Glucophage"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "76ac041cc910a9f1",
+      "source_line": 30,
+      "supplied_names": [
+        "Glimepiride",
+        "Amaryl"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "6c58758bc547e045",
+      "source_line": 31,
+      "supplied_names": [
+        "Gliclazide",
+        "Diamicron"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "a98ee9b705711e41",
+      "source_line": 32,
+      "supplied_names": [
+        "Empagliflozin",
+        "Jardiance"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "caecc5e44b044ead",
+      "source_line": 33,
+      "supplied_names": [
+        "Dapagliflozin",
+        "Forxiga"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "8c1ec4fa9e80839b",
+      "source_line": 34,
+      "supplied_names": [
+        "Sitagliptin",
+        "Januvia"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "ca10c1396d07fa15",
+      "source_line": 35,
+      "supplied_names": [
+        "Insulin Glargine",
+        "Lantus"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Type 2 diabetes mellitus",
+      "medicine_id": "8cfafcd363f31197",
+      "source_line": 36,
+      "supplied_names": [
+        "Insulin Aspart",
+        "NovoRapid"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "798c6fe77221b475",
+      "source_line": 38,
+      "supplied_names": [
+        "Omeprazole",
+        "Losec"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "0eb962e9fb96e6b4",
+      "source_line": 39,
+      "supplied_names": [
+        "Esomeprazole",
+        "Nexium"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "765a9e3f32cbe635",
+      "source_line": 40,
+      "supplied_names": [
+        "Pantoprazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "6bf39e02999bcec2",
+      "source_line": 41,
+      "supplied_names": [
+        "Amoxicillin",
+        "Amoxil"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "9712d583cf817925",
+      "source_line": 42,
+      "supplied_names": [
+        "Clarithromycin",
+        "Klacid"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "524a0b304071894b",
+      "source_line": 43,
+      "supplied_names": [
+        "Metronidazole",
+        "Flagyl"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Peptic ulcer disease",
+      "medicine_id": "1e14d0600bda38c8",
+      "source_line": 44,
+      "supplied_names": [
+        "Bismuth Subsalicylate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Urinary tract infection",
+      "medicine_id": "20f1fc5758bc16c0",
+      "source_line": 46,
+      "supplied_names": [
+        "Nitrofurantoin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Urinary tract infection",
+      "medicine_id": "8eb60395796c8a7a",
+      "source_line": 47,
+      "supplied_names": [
+        "Fosfomycin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Urinary tract infection",
+      "medicine_id": "e1dac9be6c902a6b",
+      "source_line": 48,
+      "supplied_names": [
+        "Amoxicillin and Clavulanic Acid",
+        "Augmentin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Urinary tract infection",
+      "medicine_id": "97c0eeec380b35be",
+      "source_line": 49,
+      "supplied_names": [
+        "Cefuroxime",
+        "Zinnat"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Urinary tract infection",
+      "medicine_id": "4acf49b404179416",
+      "source_line": 50,
+      "supplied_names": [
+        "Ceftriaxone"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "bd107be8959ffdd6",
+      "source_line": 52,
+      "supplied_names": [
+        "Salbutamol",
+        "Ventolin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "45b2559f4e1fd4d7",
+      "source_line": 53,
+      "supplied_names": [
+        "Budesonide",
+        "Pulmicort"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "30602229840a49d6",
+      "source_line": 54,
+      "supplied_names": [
+        "Budesonide and Formoterol",
+        "Symbicort"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "d975ac21828249bf",
+      "source_line": 55,
+      "supplied_names": [
+        "Fluticasone and Salmeterol",
+        "Seretide"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "a44297f85f484d01",
+      "source_line": 56,
+      "supplied_names": [
+        "Montelukast",
+        "Singulair"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Asthma",
+      "medicine_id": "04ea3a726eb76882",
+      "source_line": 57,
+      "supplied_names": [
+        "Ipratropium Bromide"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "9183c3a577a4bb52",
+      "source_line": 59,
+      "supplied_names": [
+        "Rifampicin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "0302fe55cfd6d4c5",
+      "source_line": 60,
+      "supplied_names": [
+        "Isoniazid"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "d416cd34aeba5da5",
+      "source_line": 61,
+      "supplied_names": [
+        "Pyrazinamide"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "21264587fffc98e8",
+      "source_line": 62,
+      "supplied_names": [
+        "Ethambutol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "ae804acd896ac2c7",
+      "source_line": 63,
+      "supplied_names": [
+        "Rifampicin and Isoniazid",
+        "Rifinah"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Tuberculosis",
+      "medicine_id": "cc4d1f4a3c8a8e13",
+      "source_line": 64,
+      "supplied_names": [
+        "Rifampicin, Isoniazid, Pyrazinamide and Ethambutol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "54238e9415df5dff",
+      "source_line": 66,
+      "supplied_names": [
+        "Paracetamol",
+        "Panadol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "a7f187a6f4f060d5",
+      "source_line": 67,
+      "supplied_names": [
+        "Ibuprofen",
+        "Brufen"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "a582495b597ecfc7",
+      "source_line": 68,
+      "supplied_names": [
+        "Diclofenac",
+        "Voltaren"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "6ae334b44a9283a6",
+      "source_line": 69,
+      "supplied_names": [
+        "Diclofenac Potassium",
+        "Cataflam"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "a9ee7a13cb1d8b30",
+      "source_line": 70,
+      "supplied_names": [
+        "Naproxen"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Pain and fever",
+      "medicine_id": "a6cb06a77ec04139",
+      "source_line": 71,
+      "supplied_names": [
+        "Mefenamic Acid",
+        "Ponstan"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Iron-deficiency anaemia",
+      "medicine_id": "9ed63154d1e2d328",
+      "source_line": 73,
+      "supplied_names": [
+        "Ferrous Sulfate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Iron-deficiency anaemia",
+      "medicine_id": "afe95dc7914b8b94",
+      "source_line": 74,
+      "supplied_names": [
+        "Ferrous Fumarate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Iron-deficiency anaemia",
+      "medicine_id": "5ff0ba0e1278ddd7",
+      "source_line": 75,
+      "supplied_names": [
+        "Ferrous Gluconate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Iron-deficiency anaemia",
+      "medicine_id": "a8a8e33a9cdc8cc0",
+      "source_line": 76,
+      "supplied_names": [
+        "Iron Polymaltose",
+        "Maltofer"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Iron-deficiency anaemia",
+      "medicine_id": "501412629a52e590",
+      "source_line": 77,
+      "supplied_names": [
+        "Folic Acid"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Sickle cell disease",
+      "medicine_id": "04a522addd4fbead",
+      "source_line": 79,
+      "supplied_names": [
+        "Hydroxyurea",
+        "Hydrea"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Sickle cell disease",
+      "medicine_id": "501412629a52e590",
+      "source_line": 80,
+      "supplied_names": [
+        "Folic Acid"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Sickle cell disease",
+      "medicine_id": "54238e9415df5dff",
+      "source_line": 81,
+      "supplied_names": [
+        "Paracetamol",
+        "Panadol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Sickle cell disease",
+      "medicine_id": "a7f187a6f4f060d5",
+      "source_line": 82,
+      "supplied_names": [
+        "Ibuprofen",
+        "Brufen"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Sickle cell disease",
+      "medicine_id": "790d1daed45b00c9",
+      "source_line": 83,
+      "supplied_names": [
+        "Phenoxymethylpenicillin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "88b1b528944b7370",
+      "source_line": 85,
+      "supplied_names": [
+        "Fluconazole",
+        "Diflucan"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "f53035420640904a",
+      "source_line": 86,
+      "supplied_names": [
+        "Clotrimazole",
+        "Canesten"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "402c8b276fcc78c2",
+      "source_line": 87,
+      "supplied_names": [
+        "Miconazole",
+        "Gyno-Daktarin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "7df0ca48f4c6f901",
+      "source_line": 88,
+      "supplied_names": [
+        "Nystatin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "32e17573eaf3a007",
+      "source_line": 89,
+      "supplied_names": [
+        "Terbinafine",
+        "Lamisil"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Fungal infections",
+      "medicine_id": "25098b221a1529aa",
+      "source_line": 90,
+      "supplied_names": [
+        "Itraconazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Scabies",
+      "medicine_id": "b46825e3b1851a2c",
+      "source_line": 92,
+      "supplied_names": [
+        "Permethrin",
+        "Lyclear"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Scabies",
+      "medicine_id": "fca0801fbd2e3cda",
+      "source_line": 93,
+      "supplied_names": [
+        "Ivermectin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Scabies",
+      "medicine_id": "3277953783faf69c",
+      "source_line": 94,
+      "supplied_names": [
+        "Benzyl Benzoate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "23c9808c4d4c4c06",
+      "source_line": 96,
+      "supplied_names": [
+        "Benzoyl Peroxide"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "80958304b67ddd7d",
+      "source_line": 97,
+      "supplied_names": [
+        "Adapalene",
+        "Differin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "a9a86807c98a5e52",
+      "source_line": 98,
+      "supplied_names": [
+        "Tretinoin",
+        "Retin-A"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "c8654dfa1e6a3a78",
+      "source_line": 99,
+      "supplied_names": [
+        "Clindamycin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "fdd3e3ccc9517e97",
+      "source_line": 100,
+      "supplied_names": [
+        "Doxycycline"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Acne",
+      "medicine_id": "e67829c3acde78ae",
+      "source_line": 101,
+      "supplied_names": [
+        "Isotretinoin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Vaginal candidiasis",
+      "medicine_id": "88b1b528944b7370",
+      "source_line": 103,
+      "supplied_names": [
+        "Fluconazole",
+        "Diflucan"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Vaginal candidiasis",
+      "medicine_id": "f53035420640904a",
+      "source_line": 104,
+      "supplied_names": [
+        "Clotrimazole",
+        "Canesten"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Vaginal candidiasis",
+      "medicine_id": "402c8b276fcc78c2",
+      "source_line": 105,
+      "supplied_names": [
+        "Miconazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Vaginal candidiasis",
+      "medicine_id": "7df0ca48f4c6f901",
+      "source_line": 106,
+      "supplied_names": [
+        "Nystatin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Bacterial vaginosis",
+      "medicine_id": "524a0b304071894b",
+      "source_line": 108,
+      "supplied_names": [
+        "Metronidazole",
+        "Flagyl"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Bacterial vaginosis",
+      "medicine_id": "c8654dfa1e6a3a78",
+      "source_line": 109,
+      "supplied_names": [
+        "Clindamycin",
+        "Dalacin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gonorrhoea",
+      "medicine_id": "4acf49b404179416",
+      "source_line": 111,
+      "supplied_names": [
+        "Ceftriaxone",
+        "Rocephin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gonorrhoea",
+      "medicine_id": "1b4ac6feb0601661",
+      "source_line": 112,
+      "supplied_names": [
+        "Cefixime"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Chlamydia",
+      "medicine_id": "fdd3e3ccc9517e97",
+      "source_line": 114,
+      "supplied_names": [
+        "Doxycycline",
+        "Vibramycin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Chlamydia",
+      "medicine_id": "649cef64d969c53e",
+      "source_line": 115,
+      "supplied_names": [
+        "Azithromycin",
+        "Zithromax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gout",
+      "medicine_id": "a64cf55fb4c002d6",
+      "source_line": 117,
+      "supplied_names": [
+        "Allopurinol",
+        "Zyloric"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gout",
+      "medicine_id": "f7cef0b66d576da5",
+      "source_line": 118,
+      "supplied_names": [
+        "Colchicine",
+        "Colcrys"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gout",
+      "medicine_id": "308165d2b3efc893",
+      "source_line": 119,
+      "supplied_names": [
+        "Febuxostat"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gout",
+      "medicine_id": "a9ee7a13cb1d8b30",
+      "source_line": 120,
+      "supplied_names": [
+        "Naproxen",
+        "Naprosyn"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gout",
+      "medicine_id": "a582495b597ecfc7",
+      "source_line": 121,
+      "supplied_names": [
+        "Diclofenac",
+        "Voltaren"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "7338725ff84f4922",
+      "source_line": 123,
+      "supplied_names": [
+        "Carbamazepine",
+        "Tegretol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "ad466db77f949fa1",
+      "source_line": 124,
+      "supplied_names": [
+        "Sodium Valproate",
+        "Epilim"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "3a69c63f450411d3",
+      "source_line": 125,
+      "supplied_names": [
+        "Levetiracetam",
+        "Keppra"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "f3a25f61795bddd9",
+      "source_line": 126,
+      "supplied_names": [
+        "Lamotrigine",
+        "Lamictal"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "4fc202048e65a533",
+      "source_line": 127,
+      "supplied_names": [
+        "Phenytoin",
+        "Dilantin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Epilepsy",
+      "medicine_id": "960753084683b29b",
+      "source_line": 128,
+      "supplied_names": [
+        "Phenobarbital"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "7ae669b86fba6d9a",
+      "source_line": 130,
+      "supplied_names": [
+        "Furosemide",
+        "Lasix"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "580d66f414c7c9a7",
+      "source_line": 131,
+      "supplied_names": [
+        "Spironolactone",
+        "Aldactone"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "bde6a813b6cab1a7",
+      "source_line": 132,
+      "supplied_names": [
+        "Enalapril",
+        "Renitec"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "a3a5a34d4db3d6fd",
+      "source_line": 133,
+      "supplied_names": [
+        "Carvedilol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "55a785c953c14824",
+      "source_line": 134,
+      "supplied_names": [
+        "Sacubitril and Valsartan",
+        "Entresto"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Heart failure",
+      "medicine_id": "caecc5e44b044ead",
+      "source_line": 135,
+      "supplied_names": [
+        "Dapagliflozin",
+        "Forxiga"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "High cholesterol",
+      "medicine_id": "920edde59b13e5a5",
+      "source_line": 137,
+      "supplied_names": [
+        "Atorvastatin",
+        "Lipitor"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "High cholesterol",
+      "medicine_id": "fcc68692865e6b40",
+      "source_line": 138,
+      "supplied_names": [
+        "Rosuvastatin",
+        "Crestor"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "High cholesterol",
+      "medicine_id": "12402be81f2c14a7",
+      "source_line": 139,
+      "supplied_names": [
+        "Simvastatin",
+        "Zocor"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "High cholesterol",
+      "medicine_id": "6d5ea8ff7347167d",
+      "source_line": 140,
+      "supplied_names": [
+        "Ezetimibe"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "High cholesterol",
+      "medicine_id": "4e765f8f1eff90c0",
+      "source_line": 141,
+      "supplied_names": [
+        "Fenofibrate"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Migraine",
+      "medicine_id": "9b4055f14bf8e688",
+      "source_line": 143,
+      "supplied_names": [
+        "Sumatriptan",
+        "Imigran"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Migraine",
+      "medicine_id": "60a983131cb1b1b4",
+      "source_line": 144,
+      "supplied_names": [
+        "Rizatriptan",
+        "Maxalt"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Migraine",
+      "medicine_id": "99b797b65414a228",
+      "source_line": 145,
+      "supplied_names": [
+        "Topiramate",
+        "Topamax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Migraine",
+      "medicine_id": "f801c521a6037534",
+      "source_line": 146,
+      "supplied_names": [
+        "Propranolol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Migraine",
+      "medicine_id": "a79616120b7d856f",
+      "source_line": 147,
+      "supplied_names": [
+        "Amitriptyline"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Depression",
+      "medicine_id": "6979e68b93072f44",
+      "source_line": 149,
+      "supplied_names": [
+        "Fluoxetine",
+        "Prozac"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Depression",
+      "medicine_id": "a9b73a1e37ce8085",
+      "source_line": 150,
+      "supplied_names": [
+        "Sertraline",
+        "Zoloft"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Depression",
+      "medicine_id": "dc4d899da1918e42",
+      "source_line": 151,
+      "supplied_names": [
+        "Escitalopram",
+        "Cipralex"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Depression",
+      "medicine_id": "24832b84b1621114",
+      "source_line": 152,
+      "supplied_names": [
+        "Venlafaxine"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Depression",
+      "medicine_id": "a79616120b7d856f",
+      "source_line": 153,
+      "supplied_names": [
+        "Amitriptyline"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Anxiety disorders",
+      "medicine_id": "b3e0f6359133644a",
+      "source_line": 155,
+      "supplied_names": [
+        "Diazepam",
+        "Valium"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Anxiety disorders",
+      "medicine_id": "5768e368e11a82c8",
+      "source_line": 156,
+      "supplied_names": [
+        "Lorazepam",
+        "Ativan"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Anxiety disorders",
+      "medicine_id": "4157d2081fc6a407",
+      "source_line": 157,
+      "supplied_names": [
+        "Alprazolam",
+        "Xanax"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Anxiety disorders",
+      "medicine_id": "b3cdc8eec95f0112",
+      "source_line": 158,
+      "supplied_names": [
+        "Buspirone",
+        "Buspar"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Schizophrenia",
+      "medicine_id": "fcf9a0f0f1a11ef6",
+      "source_line": 160,
+      "supplied_names": [
+        "Risperidone",
+        "Risperdal"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Schizophrenia",
+      "medicine_id": "1468a294ab0dcd6b",
+      "source_line": 161,
+      "supplied_names": [
+        "Olanzapine",
+        "Zyprexa"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Schizophrenia",
+      "medicine_id": "4b2e5d23df620610",
+      "source_line": 162,
+      "supplied_names": [
+        "Haloperidol",
+        "Haldol"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Schizophrenia",
+      "medicine_id": "8398e180a8f1f838",
+      "source_line": 163,
+      "supplied_names": [
+        "Quetiapine",
+        "Seroquel"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Schizophrenia",
+      "medicine_id": "a670530567194409",
+      "source_line": 164,
+      "supplied_names": [
+        "Clozapine",
+        "Clozaril"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hypothyroidism",
+      "medicine_id": "d72304c0df8f5bd1",
+      "source_line": 166,
+      "supplied_names": [
+        "Levothyroxine",
+        "Synthroid",
+        "Eltroxin"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hyperthyroidism",
+      "medicine_id": "3aaebd3bc7c62266",
+      "source_line": 168,
+      "supplied_names": [
+        "Carbimazole",
+        "Neo-Mercazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hyperthyroidism",
+      "medicine_id": "34a99d4271042852",
+      "source_line": 169,
+      "supplied_names": [
+        "Methimazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hyperthyroidism",
+      "medicine_id": "11eb5d31124c7029",
+      "source_line": 170,
+      "supplied_names": [
+        "Propylthiouracil"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Hyperthyroidism",
+      "medicine_id": "f801c521a6037534",
+      "source_line": 171,
+      "supplied_names": [
+        "Propranolol",
+        "Inderal"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gastroesophageal reflux disease",
+      "medicine_id": "798c6fe77221b475",
+      "source_line": 173,
+      "supplied_names": [
+        "Omeprazole",
+        "Losec"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gastroesophageal reflux disease",
+      "medicine_id": "0eb962e9fb96e6b4",
+      "source_line": 174,
+      "supplied_names": [
+        "Esomeprazole",
+        "Nexium"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gastroesophageal reflux disease",
+      "medicine_id": "765a9e3f32cbe635",
+      "source_line": 175,
+      "supplied_names": [
+        "Pantoprazole"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    },
+    {
+      "condition": "Gastroesophageal reflux disease",
+      "medicine_id": "b4c8f1004b33a037",
+      "source_line": 176,
+      "supplied_names": [
+        "Gaviscon"
+      ],
+      "review_status": "unverified",
+      "recommendation_enabled": false
+    }
+  ]
+}

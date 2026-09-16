@@ -1,0 +1,26 @@
+# Secrets & Environment
+.env
+.env.*
+*.env
+
+# Python junk
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+dist/
+build/
+.ipynb_checkpoints
+
+# Project specific stuff
+.local-backups/
+*.bak
+models/
+data/raw/
+usage_counts.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

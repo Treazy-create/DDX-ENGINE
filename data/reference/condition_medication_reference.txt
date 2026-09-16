@@ -1,0 +1,176 @@
+# User-supplied nursing reference, transcribed into a compact format.
+# Heading: condition; each line: ingredient(s) | supplied names separated by ;
+# These associations are unverified source claims, not treatment instructions.
+[Malaria]
+Artemether + Lumefantrine | Artemether and Lumefantrine; Coartem; Lonart; Amatem
+Dihydroartemisinin + Piperaquine | Dihydroartemisinin and Piperaquine; P-Alaxin
+Artesunate | Artesunate
+Sulfadoxine + Pyrimethamine | Fansidar
+[Typhoid fever]
+Ceftriaxone | Ceftriaxone; Rocephin
+Azithromycin | Azithromycin; Zithromax
+Cefixime | Cefixime; Suprax
+Ciprofloxacin | Ciprofloxacin
+[Pneumonia]
+Ceftriaxone | Ceftriaxone; Rocephin
+Amoxicillin | Amoxicillin; Amoxil
+Amoxicillin + Clavulanic Acid | Amoxicillin and Clavulanic Acid; Augmentin
+Azithromycin | Azithromycin; Zithromax
+Doxycycline | Doxycycline; Vibramycin
+[Hypertension]
+Amlodipine | Amlodipine; Norvasc
+Nifedipine | Nifedipine; Adalat
+Losartan | Losartan; Cozaar
+Lisinopril | Lisinopril; Zestril
+Enalapril | Enalapril; Renitec
+Hydrochlorothiazide | Hydrochlorothiazide
+Atenolol | Atenolol; Tenormin
+[Type 2 diabetes mellitus]
+Metformin | Metformin; Glucophage
+Glimepiride | Glimepiride; Amaryl
+Gliclazide | Gliclazide; Diamicron
+Empagliflozin | Empagliflozin; Jardiance
+Dapagliflozin | Dapagliflozin; Forxiga
+Sitagliptin | Sitagliptin; Januvia
+Insulin Glargine | Insulin Glargine; Lantus
+Insulin Aspart | Insulin Aspart; NovoRapid
+[Peptic ulcer disease]
+Omeprazole | Omeprazole; Losec
+Esomeprazole | Esomeprazole; Nexium
+Pantoprazole | Pantoprazole
+Amoxicillin | Amoxicillin; Amoxil
+Clarithromycin | Clarithromycin; Klacid
+Metronidazole | Metronidazole; Flagyl
+Bismuth Subsalicylate | Bismuth Subsalicylate
+[Urinary tract infection]
+Nitrofurantoin | Nitrofurantoin
+Fosfomycin | Fosfomycin
+Amoxicillin + Clavulanic Acid | Amoxicillin and Clavulanic Acid; Augmentin
+Cefuroxime | Cefuroxime; Zinnat
+Ceftriaxone | Ceftriaxone
+[Asthma]
+Salbutamol | Salbutamol; Ventolin
+Budesonide | Budesonide; Pulmicort
+Budesonide + Formoterol | Budesonide and Formoterol; Symbicort
+Fluticasone + Salmeterol | Fluticasone and Salmeterol; Seretide
+Montelukast | Montelukast; Singulair
+Ipratropium Bromide | Ipratropium Bromide
+[Tuberculosis]
+Rifampicin | Rifampicin
+Isoniazid | Isoniazid
+Pyrazinamide | Pyrazinamide
+Ethambutol | Ethambutol
+Rifampicin + Isoniazid | Rifampicin and Isoniazid; Rifinah
+Rifampicin + Isoniazid + Pyrazinamide + Ethambutol | Rifampicin, Isoniazid, Pyrazinamide and Ethambutol
+[Pain and fever]
+Paracetamol | Paracetamol; Panadol
+Ibuprofen | Ibuprofen; Brufen
+Diclofenac | Diclofenac; Voltaren
+Diclofenac Potassium | Diclofenac Potassium; Cataflam
+Naproxen | Naproxen
+Mefenamic Acid | Mefenamic Acid; Ponstan
+[Iron-deficiency anaemia]
+Ferrous Sulfate | Ferrous Sulfate
+Ferrous Fumarate | Ferrous Fumarate
+Ferrous Gluconate | Ferrous Gluconate
+Iron Polymaltose | Iron Polymaltose; Maltofer
+Folic Acid | Folic Acid
+[Sickle cell disease]
+Hydroxyurea | Hydroxyurea; Hydrea
+Folic Acid | Folic Acid
+Paracetamol | Paracetamol; Panadol
+Ibuprofen | Ibuprofen; Brufen
+Phenoxymethylpenicillin | Phenoxymethylpenicillin
+[Fungal infections]
+Fluconazole | Fluconazole; Diflucan
+Clotrimazole | Clotrimazole; Canesten
+Miconazole | Miconazole; Gyno-Daktarin
+Nystatin | Nystatin
+Terbinafine | Terbinafine; Lamisil
+Itraconazole | Itraconazole
+[Scabies]
+Permethrin | Permethrin; Lyclear
+Ivermectin | Ivermectin
+Benzyl Benzoate | Benzyl Benzoate
+[Acne]
+Benzoyl Peroxide | Benzoyl Peroxide
+Adapalene | Adapalene; Differin
+Tretinoin | Tretinoin; Retin-A
+Clindamycin | Clindamycin
+Doxycycline | Doxycycline
+Isotretinoin | Isotretinoin
+[Vaginal candidiasis]
+Fluconazole | Fluconazole; Diflucan
+Clotrimazole | Clotrimazole; Canesten
+Miconazole | Miconazole
+Nystatin | Nystatin
+[Bacterial vaginosis]
+Metronidazole | Metronidazole; Flagyl
+Clindamycin | Clindamycin; Dalacin
+[Gonorrhoea]
+Ceftriaxone | Ceftriaxone; Rocephin
+Cefixime | Cefixime
+[Chlamydia]
+Doxycycline | Doxycycline; Vibramycin
+Azithromycin | Azithromycin; Zithromax
+[Gout]
+Allopurinol | Allopurinol; Zyloric
+Colchicine | Colchicine; Colcrys
+Febuxostat | Febuxostat
+Naproxen | Naproxen; Naprosyn
+Diclofenac | Diclofenac; Voltaren
+[Epilepsy]
+Carbamazepine | Carbamazepine; Tegretol
+Sodium Valproate | Sodium Valproate; Epilim
+Levetiracetam | Levetiracetam; Keppra
+Lamotrigine | Lamotrigine; Lamictal
+Phenytoin | Phenytoin; Dilantin
+Phenobarbital | Phenobarbital
+[Heart failure]
+Furosemide | Furosemide; Lasix
+Spironolactone | Spironolactone; Aldactone
+Enalapril | Enalapril; Renitec
+Carvedilol | Carvedilol
+Sacubitril + Valsartan | Sacubitril and Valsartan; Entresto
+Dapagliflozin | Dapagliflozin; Forxiga
+[High cholesterol]
+Atorvastatin | Atorvastatin; Lipitor
+Rosuvastatin | Rosuvastatin; Crestor
+Simvastatin | Simvastatin; Zocor
+Ezetimibe | Ezetimibe
+Fenofibrate | Fenofibrate
+[Migraine]
+Sumatriptan | Sumatriptan; Imigran
+Rizatriptan | Rizatriptan; Maxalt
+Topiramate | Topiramate; Topamax
+Propranolol | Propranolol
+Amitriptyline | Amitriptyline
+[Depression]
+Fluoxetine | Fluoxetine; Prozac
+Sertraline | Sertraline; Zoloft
+Escitalopram | Escitalopram; Cipralex
+Venlafaxine | Venlafaxine
+Amitriptyline | Amitriptyline
+[Anxiety disorders]
+Diazepam | Diazepam; Valium
+Lorazepam | Lorazepam; Ativan
+Alprazolam | Alprazolam; Xanax
+Buspirone | Buspirone; Buspar
+[Schizophrenia]
+Risperidone | Risperidone; Risperdal
+Olanzapine | Olanzapine; Zyprexa
+Haloperidol | Haloperidol; Haldol
+Quetiapine | Quetiapine; Seroquel
+Clozapine | Clozapine; Clozaril
+[Hypothyroidism]
+Levothyroxine | Levothyroxine; Synthroid; Eltroxin
+[Hyperthyroidism]
+Carbimazole | Carbimazole; Neo-Mercazole
+Methimazole | Methimazole
+Propylthiouracil | Propylthiouracil
+Propranolol | Propranolol; Inderal
+[Gastroesophageal reflux disease]
+Omeprazole | Omeprazole; Losec
+Esomeprazole | Esomeprazole; Nexium
+Pantoprazole | Pantoprazole
+Sodium Alginate + Sodium Bicarbonate + Calcium Carbonate | Gaviscon
