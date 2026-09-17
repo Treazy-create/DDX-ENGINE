@@ -173,8 +173,8 @@ def non_symptom_reply(state, data, definitions):
                         'or clinician can check the cause, your current medicines and suitability. '
                         'I can help summarize your symptoms for that conversation.', 'discussion')
     if data.intent == 'booking':
-        return Decision('Appointment booking is not connected yet. No appointment has been made. '
-                        'Please contact a healthcare service directly if you need care.', 'discussion')
+        return Decision('You can choose a practitioner, date and time using the demo booking below. '
+                        'It is a demonstration, so no real practitioner will be contacted.', 'booking')
     if data.intent == 'clarification':
         if state.get('pending_question'):
             return Decision('That question helps distinguish between possible explanations for '

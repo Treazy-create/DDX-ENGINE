@@ -137,21 +137,13 @@ def session_for(sid):
     return session
 
 
-def handoff():
-    number = os.getenv('WHATSAPP_NUMBER', '').strip()
-    if number and number.isdigit() and 8 <= len(number) <= 15:
-        return 'https://wa.me/' + number
-    return None
-
-
 def response_for(sid, session, reply, status, prediction=None):
     session['last_reply'] = reply
     session['status'] = status
     session['audio'] = None
     return {'session_id': sid, 'reply': reply, 'status': status,
             'prediction': prediction, 'prediction_source': classifier.config.model_type if prediction else None,
-            'handoff_url': handoff() if status in ('assessment', 'uncertain') else None,
-            'handoff_label': 'WhatsApp — demonstration contact',
+            'offer_booking': status in ('assessment', 'uncertain', 'booking'),
             'recognized_findings': [{'question': definitions[k]['question_en'], 'answer': evidence_answer(definitions[k], v)} for k, v in session['answers'].items()],
             'voice_disclosure': 'Spoken replies use an AI-generated voice.'}
 

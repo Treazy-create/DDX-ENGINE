@@ -24,3 +24,21 @@ usage_counts.json
 .vscode/
 .idea/
 .DS_Store
+!.env.example
+*.pyc
+
+# Credentials and local runtime state
+*.log
+# Dependencies and generated builds
+node_modules/
+.pytest_cache/
+.ipynb_checkpoints/
+# Large data and trained models; reproduce locally
+data/processed/*.jsonl
+reports/
+# Local assets need independent redistribution permission
+data/*.jpg
+data/*.png
+# Workstation settings
+
+*.backup-*

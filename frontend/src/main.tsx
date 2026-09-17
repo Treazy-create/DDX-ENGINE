@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   ArrowUp,
-  ArrowUpRight,
+  CalendarDays,
   Check,
   CircleHelp,
   LoaderCircle,
@@ -11,20 +11,21 @@ import {
   Mic,
   Plus,
   ShieldCheck,
-  Square,
   Volume2,
   VolumeX,
   X,
 } from "lucide-react";
 import "./styles.css";
+import { useVoiceConversation } from './hooks/useVoiceConversation';
+import { AppointmentBooking } from './components/AppointmentBooking';
 
 const API = "http://127.0.0.1:8000";
-const WHATSAPP = "https://wa.link/u2krux";
 
 type Reply = {
   session_id: string;
   reply: string;
   status: string;
+  offer_booking?: boolean;
 };
 
 type Message = {
@@ -33,6 +34,7 @@ type Message = {
   text: string;
   time: string;
   status?: string;
+  offerBooking?: boolean;
 };
 
 class ApiError extends Error {
@@ -102,22 +104,17 @@ function App() {
   const [session, setSession] = useState<string | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
   const [draft, setDraft] = useState("");
+  const [reviewTranscript, setReviewTranscript] = useState(false);
   const [age, setAge] = useState("");
   const [sex, setSex] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [recording, setRecording] = useState(false);
-  const [seconds, setSeconds] = useState(0);
-  const [speaking, setSpeaking] = useState(false);
+  const [page, setPage] = useState<"chat" | "appointments">("chat");
   const [expired, setExpired] = useState(false);
 
   const locked = useRef(false);
-  const recorder = useRef<MediaRecorder | null>(null);
-  const microphoneStream = useRef<MediaStream | null>(null);
-  const recordingClock = useRef<ReturnType<typeof setInterval> | null>(null);
-  const recordingStop = useRef<ReturnType<typeof setTimeout> | null>(null);
   const bottom = useRef<HTMLDivElement>(null);
   const input = useRef<HTMLTextAreaElement>(null);
   const about = useRef<HTMLDialogElement>(null);
@@ -141,9 +138,22 @@ function App() {
     setBusy(value);
   }
 
-  function stopRecordingTimers() {
-    if (recordingClock.current) clearInterval(recordingClock.current);
-    if (recordingStop.current) clearTimeout(recordingStop.current);
+  const voice = useVoiceConversation({
+    transcript: (text) => { setDraft(text); if (!text) setReviewTranscript(false); },
+    error: setError,
+    transcribe: async (blob) => {
+      if (!session) throw new Error('Start a conversation first.');
+      const form = new FormData();
+      const extension = blob.type.includes('mp4') ? 'mp4' : 'webm';
+      form.append('audio', blob, 'recording.' + extension);
+      const result = await api<{ text: string }>('/sessions/' + session + '/transcribe', { method: 'POST', body: form });
+      return result.text;
+    },
+  });
+  const recording = voice.phase === 'listening';
+  const speaking = voice.speaking;
+  function openAppointments() {
+    voice.disable(); setPage('appointments'); setMenuOpen(false);
   }
 
   useEffect(() => {
@@ -155,26 +165,13 @@ function App() {
     });
   }, [messages, busy]);
 
-  useEffect(() => {
-    return () => {
-      stopRecordingTimers();
-      if (recorder.current) {
-        recorder.current.onstop = null;
-        if (recorder.current.state === "recording") {
-          recorder.current.stop();
-        }
-      }
-      microphoneStream.current?.getTracks().forEach((track) => track.stop());
-      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
-    };
-  }, []);
-
   function handleError(error: unknown) {
     setError(
       error instanceof Error ? error.message : "Something went wrong."
     );
 
     if (error instanceof ApiError && error.status === 404) {
+      voice.disable();
       setExpired(true);
       setNotice("This session has expired. Start a new conversation.");
     }
@@ -189,8 +186,10 @@ function App() {
         text: reply.reply,
         time: timestamp(),
         status: reply.status,
+        offerBooking: reply.offer_booking,
       },
     ]);
+    if (voice.isEnabled()) voice.speak(reply.reply, reply.status !== 'urgent');
   }
 
   async function startConversation(event: React.FormEvent) {
@@ -219,7 +218,7 @@ function App() {
   }
 
   async function newConversation() {
-    if (locked.current || recording) return;
+    if (locked.current) return;
 
     if (
       messages.length &&
@@ -230,7 +229,8 @@ function App() {
 
     setWorking(true);
 
-    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    voice.disable();
+    setPage("chat");
 
     if (session) {
       try {
@@ -246,202 +246,42 @@ function App() {
     setError("");
     setNotice("");
     setExpired(false);
-    setSpeaking(false);
     setMenuOpen(false);
     pending.current = null;
     setWorking(false);
   }
 
   async function sendMessage() {
-    const text = draft.trim();
-
-    if (
-      !text ||
-      !session ||
-      locked.current ||
-      recording ||
-      finished ||
-      expired
-    ) {
-      return;
-    }
-
-    // Reuse the request ID when retrying the same message.
-    if (!pending.current || pending.current.text !== text) {
-      pending.current = { text, request_id: crypto.randomUUID() };
-    }
-
-    setWorking(true);
-    setError("");
-    setNotice("");
-
+    if (!session || locked.current || finished || expired) return;
+    setWorking(true); setError(''); setNotice('');
     try {
-      const reply = await api<Reply>(
-        "/sessions/" + session + "/messages",
-        post(pending.current)
-      );
-
-      setMessages((current) => [
-        ...current,
-        {
-          id: crypto.randomUUID(),
-          role: "user",
-          text,
-          time: timestamp(),
-        },
-      ]);
-
-      setDraft("");
-      pending.current = null;
-      addReply(reply);
+      const text = voice.enabled && !reviewTranscript ? await voice.capture() : draft.trim();
+      if (voice.enabled && voice.engine === 'recorded' && !reviewTranscript) {
+        setDraft(text); setReviewTranscript(true); voice.pause();
+        setNotice('Check or correct your transcript, then press Send to submit it.');
+        return;
+      }
+      if (!text) throw new Error('Enter or speak a message first.');
+      if (text.length > 1800) throw new Error('Please keep each message under 1,800 characters. End voice mode to edit the transcript.');
+      if (!pending.current || pending.current.text !== text) pending.current = { text, request_id: crypto.randomUUID() };
+      const reply = await api<Reply>('/sessions/' + session + '/messages', post(pending.current));
+      setMessages(current => [...current, { id: crypto.randomUUID(), role: 'user', text, time: timestamp() }]);
+      setDraft(''); setReviewTranscript(false); pending.current = null; addReply(reply);
     } catch (error) {
-      handleError(error);
-    } finally {
-      setWorking(false);
-      setTimeout(() => input.current?.focus(), 0);
-    }
+      voice.pause(); handleError(error);
+    } finally { setWorking(false); }
   }
 
   function readAloud() {
     if (!lastReply) return;
-
-    if (!("speechSynthesis" in window)) {
-      setError("Read-aloud is unavailable. Please try Chrome or Edge.");
-      return;
-    }
-
-    window.speechSynthesis.cancel();
-
-    if (speaking) {
-      setSpeaking(false);
-      return;
-    }
-
-    const speech = new SpeechSynthesisUtterance(lastReply.text);
-    speech.lang = "en";
-    speech.rate = 0.95;
-    speech.onend = () => setSpeaking(false);
-    speech.onerror = () => setSpeaking(false);
-
-    setSpeaking(true);
-    window.speechSynthesis.speak(speech);
+    if (speaking) { voice.pause(); return; }
+    voice.speak(lastReply.text, !finished);
   }
 
-  async function toggleMicrophone() {
-    if (recorder.current?.state === "recording") {
-      recorder.current.stop();
-      return;
-    }
-
-    if (!session || locked.current || finished || expired) return;
-
-    if (draft.trim()) {
-      setError("Send or clear your draft before recording a new message.");
-      return;
-    }
-
-    setWorking(true);
-    setError("");
-    setNotice("");
-
-    try {
-      if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
-        throw new Error("Use Chrome or Edge on localhost for microphone recording.");
-      }
-
-      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
-      setSpeaking(false);
-
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      microphoneStream.current = stream;
-
-      const mime = [
-        "audio/webm;codecs=opus",
-        "audio/webm",
-        "audio/mp4",
-      ].find((type) => MediaRecorder.isTypeSupported(type));
-
-      const recordingDevice = new MediaRecorder(
-        stream,
-        mime ? { mimeType: mime } : {}
-      );
-
-      recorder.current = recordingDevice;
-      const chunks: BlobPart[] = [];
-      let failed = false;
-
-      recordingDevice.ondataavailable = (event) => {
-        if (event.data.size) chunks.push(event.data);
-      };
-
-      recordingDevice.onerror = () => {
-        failed = true;
-        stopRecordingTimers();
-        stream.getTracks().forEach((track) => track.stop());
-        setRecording(false);
-        setWorking(false);
-        setError("Recording failed. Please try again or type your message.");
-      };
-
-      recordingDevice.onstop = async () => {
-        stopRecordingTimers();
-        stream.getTracks().forEach((track) => track.stop());
-        setRecording(false);
-
-        if (failed) return;
-
-        setWorking(true);
-        setNotice("Turning your recording into text…");
-
-        try {
-          const type = recordingDevice.mimeType;
-          const extension = type.includes("mp4")
-            ? "mp4"
-            : type.includes("ogg")
-            ? "ogg"
-            : "webm";
-
-          const audio = new Blob(chunks, { type });
-
-          if (!audio.size) throw new Error("The recording was empty. Try again.");
-
-          const form = new FormData();
-          form.append("audio", audio, "recording." + extension);
-
-          const result = await api<{ text: string }>(
-            "/sessions/" + session + "/transcribe",
-            { method: "POST", body: form }
-          );
-
-          setDraft(result.text);
-          setNotice("Check your transcript, then press Send.");
-        } catch (error) {
-          setNotice("");
-          handleError(error);
-        } finally {
-          setWorking(false);
-          setTimeout(() => input.current?.focus(), 0);
-        }
-      };
-
-      recordingDevice.start();
-      setSeconds(0);
-      setRecording(true);
-      setWorking(false);
-
-      recordingClock.current = setInterval(
-        () => setSeconds((value) => value + 1),
-        1000
-      );
-
-      recordingStop.current = setTimeout(() => {
-        if (recordingDevice.state === "recording") recordingDevice.stop();
-      }, 30000);
-    } catch (error) {
-      microphoneStream.current?.getTracks().forEach((track) => track.stop());
-      handleError(error);
-      setWorking(false);
-    }
+  function toggleVoice() {
+    if (voice.enabled) { voice.disable(); return; }
+    if (draft.trim()) { setError('Send or clear your typed draft before starting voice mode.'); return; }
+    setError(''); voice.enable();
   }
 
   return (
@@ -463,22 +303,26 @@ function App() {
         <button
           className="new-chat"
           onClick={newConversation}
-          disabled={busy || recording}
+          disabled={busy}
         >
           <Plus size={19} /> New conversation
         </button>
 
         <button
           className="current-chat"
-          aria-current="page"
+          aria-current={page === "chat" ? "page" : undefined}
           onClick={() => {
-            setMenuOpen(false);
+            setPage("chat"); setMenuOpen(false);
             input.current?.focus();
           }}
         >
           <MessageCircle size={19} /> Current conversation
         </button>
 
+        <button className="about-link booking-nav" disabled={busy || finished} onClick={openAppointments}
+          aria-current={page === 'appointments' ? 'page' : undefined}>
+          <CalendarDays size={19} /> Demo appointments
+        </button>
         <div className="sidebar-bottom">
           <div className="quiet-note">
             <ShieldCheck size={20} />
@@ -502,14 +346,14 @@ function App() {
           </button>
 
           <div className="heading">
-            <h1>Let’s talk about how you feel.</h1>
+            <h1>{page === "chat" ? "Let’s talk about how you feel." : "Your next conversation."}</h1>
             <p>Describe what’s bothering you. We’ll take it from there.</p>
           </div>
 
           <button
             className="read-button"
             onClick={readAloud}
-            disabled={!lastReply || recording}
+            disabled={!lastReply || recording || page !== "chat"}
             aria-label={speaking ? "Stop reading" : "Read the last reply aloud"}
           >
             {speaking ? <VolumeX size={19} /> : <Volume2 size={19} />}
@@ -517,6 +361,7 @@ function App() {
           </button>
         </header>
 
+        {page === 'appointments' ? <AppointmentBooking onBack={() => setPage('chat')} /> : <>
         <section className="conversation">
           <div className="wallpaper" aria-hidden="true" />
 
@@ -598,18 +443,12 @@ function App() {
                         <p>{message.text}</p>
 
                         {message.role === "assistant" &&
-                          ["assessment", "uncertain"].includes(message.status || "") && (
+                          (message.offerBooking || ["assessment", "uncertain"].includes(message.status || "")) && (
                             <div className="handoff">
-                              <a
-                                href={WHATSAPP}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <MessageCircle size={18} />
-                                Continue on WhatsApp
-                                <ArrowUpRight size={17} />
-                              </a>
-                              <small>Demo contact · Opens WhatsApp</small>
+                              <button className="primary" onClick={openAppointments} disabled={busy || finished}>
+                                <CalendarDays size={18} /> Book a demo appointment
+                              </button>
+                              <small>Fictional practitioners · No real booking</small>
                             </div>
                           )}
                       </div>
@@ -649,13 +488,23 @@ function App() {
             </div>
           )}
 
-          {recording && (
-            <div className="record-status" role="status">
-              <span className="record-dot" />
-              Recording {seconds}s / 30s — press stop when finished.
-            </div>
-          )}
-
+          {session && !finished && !expired && <div className="voice-toolbar">
+            <button type="button" className="back-link" onClick={toggleVoice} disabled={busy && !voice.enabled}>
+              <Mic size={17} /> {voice.enabled ? 'End voice mode' : 'Start voice mode'}
+            </button>
+            {!voice.enabled && <label>Voice input
+              <select value={voice.engine} onChange={event => voice.setEngine(event.target.value as 'browser' | 'recorded')} disabled={busy}>
+                {voice.liveAvailable && <option value="browser">Live captions · browser</option>}
+                <option value="recorded">Recorded audio · OpenAI</option>
+              </select>
+            </label>}
+            {voice.enabled && <>
+              <span role="status">{{off:'Off', starting:'Starting microphone…', listening:'Listening — press Send when finished', ready:'Recording ready — press Send', thinking:'Preparing reply…', speaking:'Speaking…', paused:'Voice paused'}[voice.phase]}</span>
+              <button type="button" className="back-link" onClick={voice.toggleMute}>{voice.muted ? <VolumeX size={17} /> : <Volume2 size={17} />}{voice.muted ? 'Unmute replies' : 'Mute replies'}</button>
+              {voice.phase === 'paused' && !busy && <button type="button" className="back-link" onClick={() => void voice.restart()}>Restart listening</button>}
+            </>}
+            <small>{voice.engine === 'browser' ? 'Live captions may send audio to your browser’s speech service.' : 'Press Send to transcribe, review the text, then Send again to submit. Recordings are limited to 30 seconds.'} Replies use a synthetic browser voice.</small>
+          </div>}
           {notice && !busy && !recording && (
             <p className="notice" role="status">{notice}</p>
           )}
@@ -688,12 +537,13 @@ function App() {
                 rows={2}
                 maxLength={1800}
                 value={draft}
-                disabled={!session || busy || recording}
+                disabled={!session || busy}
+                readOnly={voice.enabled && !reviewTranscript}
                 placeholder={
                   !session
                     ? "Start a conversation above to begin…"
-                    : recording
-                    ? "Listening…"
+                    : voice.enabled
+                    ? "Voice mode — your transcript appears here…"
                     : "Describe what you’re feeling…"
                 }
                 onChange={(event) => setDraft(event.target.value)}
@@ -713,20 +563,18 @@ function App() {
                 <button
                   type="button"
                   className={"mic-button " + (recording ? "recording" : "")}
-                  aria-label={recording ? "Stop recording" : "Record a voice message"}
-                  onClick={toggleMicrophone}
-                  disabled={!session || busy}
+                  aria-label={voice.enabled ? "End voice mode" : "Start voice mode"}
+                  onClick={toggleVoice}
+                  disabled={!session || (busy && !voice.enabled)}
                 >
-                  {recording
-                    ? <Square size={18} fill="currentColor" />
-                    : <Mic size={21} />}
+                  <Mic size={21} />
                 </button>
 
                 <button
                   type="submit"
                   className="send-button"
-                  aria-label="Send message"
-                  disabled={!session || busy || recording || !draft.trim()}
+                  aria-label={voice.enabled && voice.engine === "recorded" && !reviewTranscript ? "Transcribe recording" : "Send message"}
+                  disabled={!session || busy || (voice.enabled ? !voice.canSend : !draft.trim())}
                 >
                   {busy
                     ? <LoaderCircle size={20} className="spin" />
@@ -741,6 +589,7 @@ function App() {
             <span>For emergencies, seek urgent in-person help.</span>
           </p>
         </footer>
+        </>}
       </main>
 
       <dialog
@@ -770,8 +619,8 @@ function App() {
           Read-aloud uses a synthetic browser voice.
         </p>
         <p>
-          The WhatsApp link connects to the project’s demonstration contact,
-          not a verified medical service.
+          Appointment profiles are fictional. Bookings are saved only in this browser,
+          and no real practitioner is contacted. You can cancel them on the appointments page.
         </p>
 
         <button className="primary" onClick={() => about.current?.close()}>

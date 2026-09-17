@@ -396,6 +396,7 @@ h1 {
 }
 
 .handoff a:hover { background: #236243; }
+.handoff button { display: inline-flex; align-items: center; gap: 8px; }
 .handoff small { display: block; font-size: 11px; color: var(--muted); margin-top: 8px; }
 
 .thinking {
@@ -550,6 +551,51 @@ dialog .primary { margin-top: 7px; }
 }
 
 .spin { animation: spin 1.2s linear infinite; }
+.voice-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; max-width: 900px; margin: 0 auto 12px; color: var(--muted); font-size: 12px; }
+.voice-toolbar label { display: flex; align-items: center; gap: 8px; }
+.voice-toolbar select { max-width: 220px; border: 1px solid var(--line); padding: 7px; border-radius: 6px; background: white; }
+.voice-toolbar small { flex-basis: 100%; line-height: 1.5; }
+.back-link { display: inline-flex; align-items: center; gap: 8px; border: 0; background: transparent; color: var(--green); padding: 8px 0; font-size: 13px; text-align: left; }
+.back-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.booking-nav { margin-top: 12px; }
+.booking-page { overflow-y: auto; padding: 26px 40px 50px; flex: 1; min-height: 0; }
+.booking-page > *, .booking-page > form { max-width: 960px; margin-left: auto; margin-right: auto; }
+.booking-page h2 { font-size: 28px; letter-spacing: -.6px; margin-top: 25px; margin-bottom: 8px; }
+.booking-intro { color: var(--muted); margin-top: 0; line-height: 1.6; }
+.demo-notice { display: flex; gap: 10px; align-items: flex-start; padding: 14px 0 22px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted); line-height: 1.6; }
+.demo-notice svg { flex-shrink: 0; margin-top: 2px; }
+.booking-page fieldset { border: 0; padding: 0; margin: 26px 0; min-width: 0; }
+.booking-page legend { font-weight: 650; font-size: 16px; margin-bottom: 14px; }
+.practitioner-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.practitioner { display: flex; flex-wrap: wrap; gap: 12px; padding: 17px; border: 1px solid var(--line); border-radius: 12px; cursor: pointer; }
+.practitioner.selected { border-color: var(--green); background: var(--soft); }
+.practitioner input { accent-color: var(--green); margin-left: auto; order: 2; align-self: flex-start; }
+.practitioner > span:last-child { flex-basis: 100%; order: 3; }
+.practitioner strong, .practitioner span span, .practitioner small { display: block; }
+.practitioner span span { margin-top: 5px; font-size: 13px; color: var(--green); }
+.practitioner small { font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 8px; }
+.practitioner-avatar { width: 64px; height: 74px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--green); }
+.practitioner-avatar small { margin: 4px 0 0; font-size: 10px; font-weight: 650; }
+.booking-schedule { display: grid; grid-template-columns: 1fr 1.5fr; gap: 32px; align-items: start; margin-top: 30px; }
+.date-field { display: flex; flex-direction: column; gap: 14px; font-weight: 650; }
+.date-field input { padding: 12px; min-width: 0; width: 100%; background: white; color: var(--green); border: 1px solid var(--line); border-radius: 8px; }
+.booking-page .time-field { margin: 0; }
+.time-slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+.time-slots button { border: 1px solid var(--line); border-radius: 7px; background: white; padding: 11px; font-variant-numeric: tabular-nums; }
+.time-slots button[aria-pressed=true] { background: var(--green); color: white; }
+.time-slots button:disabled { text-decoration: line-through; }
+.time-field small { display: block; margin-top: 12px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.booking-summary { display: flex; gap: 20px; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); margin-top: 30px; padding-top: 18px; }
+.booking-summary p { font-weight: 650; margin: 0; }
+.booking-summary span, .saved-appointment span { display: block; color: var(--muted); font-size: 13px; font-weight: 400; margin-top: 6px; }
+.booking-confirmation { display: flex; gap: 14px; align-items: flex-start; background: var(--soft); padding: 18px; border-radius: 12px; margin-top: 20px; color: var(--green); }
+.booking-confirmation p { margin: 7px 0; }
+.saved-appointments { margin-top: 42px; }
+.saved-appointments > p { font-size: 14px; color: var(--muted); }
+.saved-appointment { display: flex; align-items: center; gap: 14px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.saved-appointment p { flex: 1; margin: 0; }
+@media (max-width: 950px) { .practitioner-list { grid-template-columns: 1fr; } .practitioner { flex-wrap: nowrap; align-items: center; } .practitioner > span:last-child { flex: 1; order: 1; } .practitioner input { order: 3; } }
+@media (max-width: 700px) { .booking-page { padding: 20px 16px 35px; } .booking-page h2 { font-size: 24px; } .booking-schedule { grid-template-columns: 1fr; gap: 25px; } .booking-summary { align-items: stretch; flex-direction: column; } .voice-toolbar { gap: 8px 12px; } .voice-toolbar select { max-width: 190px; } }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (min-width: 1500px) {
